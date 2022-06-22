@@ -1,25 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>My Website</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <main>
-      <h1>Panel width calculator</h1>
-      <form>
-        <label for="total-width"
-          >Enter total width:
-          <input type="number" name="total-width" id="total-width" />
-        </label>
-        <button type="submit">Calculate panel width</button>
-      </form>
-      <h3 id="thickness-label">Panel width for print:</h3>
-      <span id="panel-width"></span>
-    </main>
-    <script src="index.js" type="module"></script>
-  </body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>My Website</title>
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,slnt,wdth,wght,XTRA,YOPQ,YTAS,YTDE,YTFI,YTLC,YTUC@8..144,-7,122.1,180,371,30,813,-258,661,565,569&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <main>
+            <h1>Panel width calculator</h1>
+            <p>(calculations are based on a 48" roll width and 1/2" overlap)</p>
+            <form action="demo">
+                <label for="total-width"
+                    >Enter total width:
+                    <input
+                        type="text"
+                        name="total-width"
+                        class="input"
+                        id="total-width"
+                        pattern="^[+-]?\d+(\.\d+)?$"
+                        required
+                    />
+                </label>
+
+                <input type="submit" value="Calculate panel width" />
+            </form>
+            <h3 id="thickness-label">Panel width for print:</h3>
+            <span id="panel-width"></span>
+        </main>
+        <script src="index.js" type="module"></script>
+    </body>
 </html>
