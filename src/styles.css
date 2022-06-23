@@ -1,6 +1,8 @@
 :root {
     --primary: hsl(65, 50%, 50%);
+    --primary-dark: hsl(65, 50%, 30%);
     --secondary: hsl(245, 50%, 50%);
+    --secondary-dark: hsl(245, 50%, 30%);
     --background: hsl(65, 20%, 90%);
     --text-color: hsl(0, 0%, 10%);
     --monospace: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
@@ -14,13 +16,17 @@
 @media (prefers-color-scheme: dark) {
     :root {
         --primary: hsl(65, 50%, 60%);
+        --primary-dark: hsl(65, 50%, 40%);
 
         --secondary: hsl(245, 50%, 70%);
+        --secondary-dark: hsl(245, 50%, 50%);
         --primary: hsl(65, 50%, 60%);
         --background: hsl(65, 20%, 10%);
         --text-color: hsl(0, 0%, 90%);
     }
 }
+
+/* resets */
 
 html {
     box-sizing: border-box;
@@ -58,11 +64,21 @@ img {
     height: auto;
 }
 
+input,
+textarea {
+    -webkit-appearance: none;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+/* my styles */
+
 body {
     background-color: var(--background);
     font-family: var(--monospace);
     color: var(--text-color);
     margin: 0 auto;
+    text-align: center;
 }
 
 h1 {
@@ -94,6 +110,12 @@ label {
     padding: 1rem;
 }
 
+.button-container {
+    display: grid;
+    place-items: center;
+    margin-top: 2vh;
+}
+
 h3 {
     margin-top: 5vh;
     display: inline;
@@ -110,16 +132,19 @@ input[type='submit'] {
     border: none;
     width: max-content;
     background-color: var(--secondary);
-    padding: 0.4rem 1rem;
+    padding: 0.7rem 1rem;
     color: var(--background);
     text-transform: lowercase;
     font-weight: 700;
     letter-spacing: 0.1rem;
     cursor: pointer;
+    box-shadow: 1px 1px 5px var(--secondary-dark);
 }
 input[type='submit']:hover {
-    background-color: var(--secondary);
+    background-color: var(--primary);
     opacity: 0.9;
+    color: var(--text-color);
+    box-shadow: 1px 1px 5px var(--primary-dark);
 }
 input[type='submit']:active {
     background-color: var(--primary);
