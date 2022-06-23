@@ -62,21 +62,27 @@ body {
     background-color: var(--background);
     font-family: var(--monospace);
     color: var(--text-color);
+    margin: 0 auto;
 }
 
 h1 {
     font-family: 'Roboto Flex', var(--sans-serif);
     margin-top: 10rem;
     font-size: 4rem;
+    line-height: 0.9;
 }
 
 main {
     display: grid;
     place-items: center;
+    width: clamp(16rem, 87vw, 40rem);
+    margin: 0 auto;
 }
 
 form {
     margin-top: 10vh;
+    display: grid;
+    justify-content: center;
 }
 
 label {
