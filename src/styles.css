@@ -56,7 +56,7 @@ body {
 }
 
 h1 {
-    font-family: 'Roboto Flex';
+    font-family: 'Roboto Flex', var(--sans-serif);
     margin-top: 10rem;
     font-size: 4rem;
 }
@@ -75,8 +75,13 @@ label {
     font-size: 1.2em;
 }
 
+.result_container {
+    padding: 1rem;
+}
+
 h3 {
     margin-top: 5vh;
+    display: inline;
 }
 
 span {
