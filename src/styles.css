@@ -1,9 +1,7 @@
 :root {
-    --primary-hue: 65;
-    --secondary-hue: hsl(245, 50%, 50%);
-    --primary: hsl(var(--primary-hue), 50%, 50%);
+    --primary: hsl(65, 50%, 50%);
     --secondary: hsl(245, 50%, 50%);
-    --background: hsl(var(--primary-hue), 20%, 10%);
+    --background: hsl(65, 20%, 90%);
     --text-color: hsl(0, 0%, 10%);
     --monospace: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
         'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
@@ -15,12 +13,11 @@
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --primary-hue: 65;
-        --primary: hsl(var(--primary-hue), 50%, 60%);
+        --primary: hsl(65, 50%, 60%);
 
-        --secondary: hsl(245, 50%, 60%);
-        --primary: hsl(var(--primary-hue), 50%, 60%);
-        --background: hsl(var(--primary-hue), 20%, 90%);
+        --secondary: hsl(245, 50%, 70%);
+        --primary: hsl(65, 50%, 60%);
+        --background: hsl(65, 20%, 10%);
         --text-color: hsl(0, 0%, 90%);
     }
 }
