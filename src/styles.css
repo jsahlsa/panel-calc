@@ -140,13 +140,12 @@ input[type='submit'] {
     letter-spacing: 0.1rem;
     cursor: pointer;
     box-shadow: 1px 1px 5px var(--secondary-dark);
-    border: 4px solid var(--primary);
 }
 input[type='submit']:hover {
     background-color: var(--primary);
     opacity: 0.9;
-    color: var(--secondary);
-    box-shadow: 1px 1px 5px var(--primary-dark);
+    color: var(--secondary-dark);
+    box-shadow: 1px 1px 2px var(--primary-dark);
 }
 input[type='submit']:active {
     background-color: var(--primary);
