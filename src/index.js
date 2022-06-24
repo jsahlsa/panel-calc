@@ -30,7 +30,12 @@ const calculatePanels = (e) => {
     finalSize.textContent = !Number.isNaN(Number(panel))
         ? `${panel}"`
         : 'Please enter a valid number';
-        totalPanels.textContent = numberOfPanels;
+    totalPanels.textContent = numberOfPanels;
+    input.focus();
+    input.select();
 };
 
 submitBtn.addEventListener('click', calculatePanels);
+
+input.focus();
+input.select();
