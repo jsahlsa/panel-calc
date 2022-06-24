@@ -99,7 +99,9 @@ main {
 form {
     margin-top: 10vh;
     display: grid;
+    gap: 1em;
     justify-content: center;
+    margin-bottom: 3vh;
 }
 
 label {
@@ -126,7 +128,6 @@ span {
     font-family: var(--sans-serif);
     font-weight: 700;
     font-size: 1.3rem;
-    margin-top: 2vh;
 }
 
 input[type='submit'] {
@@ -159,4 +160,21 @@ input[type='text'] {
     font-size: 1.1rem;
     font-family: var(--monospace);
     font-weight: 400;
+}
+
+label {
+    position: relative;
+}
+label > input[name='roll-size'] {
+    border: 2px solid var(--primary);
+}
+
+label[for='roll-size']::after {
+    content: '(optional, default is 48)';
+    display: block;
+    margin-top: 0.2rem;
+    font-size: 0.8rem;
+    opacity: 0.8;
+    left: 0;
+    top: 1.5rem;
 }

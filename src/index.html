@@ -21,6 +21,16 @@
             <h1>Panel width calculator</h1>
             <p>(calculations are based on a 48" roll width and 1/2" overlap)</p>
             <form action="demo">
+                <label for="roll-size"
+                    >Enter roll size:
+                    <input
+                        type="text"
+                        name="roll-size"
+                        class="roll-input"
+                        id="roll-size"
+                        pattern="^[+-]?\d+(\.\d+)?$"
+                    />
+                </label>
                 <label for="total-width"
                     >Enter total width:
                     <input

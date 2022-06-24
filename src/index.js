@@ -2,11 +2,15 @@ const submitBtn = document.querySelector('input[type="submit"]');
 const input = document.querySelector('.input');
 const finalSize = document.querySelector('#panel-width');
 const totalPanels = document.querySelector('#number-of-panels');
+const rollSize = document.querySelector('#roll-size');
 
 const calculatePanels = (e) => {
     e.preventDefault();
     // defaults
-    const rollWidth = 48;
+    const rollWidth = rollSize.value ? rollSize.value : 48;
+    console.log(rollSize);
+    console.log(rollWidth);
+
     const gapSize = 0.5;
     // convert input to a number
     const totalWidth = Number(input.value);
