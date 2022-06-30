@@ -7,7 +7,7 @@ const rollSize = document.querySelector('#roll-size');
 const calculatePanels = (e) => {
     e.preventDefault();
     // defaults
-    const rollWidth = rollSize.value ? rollSize.value : 48;
+    const rollWidth = rollSize.value ? rollSize.value - 1 : 48;
     console.log(rollSize);
     console.log(rollWidth);
 

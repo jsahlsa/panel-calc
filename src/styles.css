@@ -140,7 +140,10 @@ input[type='submit'] {
     font-weight: 700;
     letter-spacing: 0.1rem;
     cursor: pointer;
-    box-shadow: 1px 1px 5px var(--secondary-dark);
+    box-shadow: 2px 2px 5px var(--secondary-dark);
+    text-transform: uppercase;
+    font-size: large;
+    border-radius: 3px;
 }
 input[type='submit']:hover {
     background-color: var(--primary);
@@ -151,6 +154,7 @@ input[type='submit']:hover {
 input[type='submit']:active {
     background-color: var(--primary);
     transform: translate(0, 0.2rem);
+    box-shadow: none;
 }
 
 input[type='text'] {
